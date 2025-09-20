@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+header {
+  background-color: #408b84;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 24px;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+button {
+  margin-left: 1rem;
+  padding: 14px 28px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.login-container {
+  width: 350px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #041c32;
+}
+
+.login-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.login-container button {
+  padding: 10px 20px;
+  background-color: #041c32;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.login-container button:hover {
+  background-color: #064663;
+}
+
+.login-container p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.login-container a {
+  color: #064663;
+  text-decoration: none;
+}
+.container {
+  text-align: center;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px; /* Increases margin between rows */
+  margin-left: 5px;
+}
+.action {
+  display: flex;
+  align-items: center;
+}
+.action:focus-within .form {
+  display: flex;
+}
+.login-container-student {
+  /* stud det.html*/
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background-color: #00000080;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: none;
+  position: fixed;
+  z-index: 10000000;
+  left: 0;
+  top: 0;
+  overflow: auto;
+
+  align-items: center;
+  justify-content: center;
+}
+.login-container-student h2 {
+  /*register student*/
+  text-align: center;
+  margin-bottom: 20px;
+  color: #345e85;
+}
+.login-container-student input {
+  width: 90%;
+  padding: 10px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 24px;
+}
+.login-container-student button {
+  /*cancel  and create*/
+  padding: 10px 20px;
+  background-color: #0c0c24;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 12px;
+}
+
+.login-container-student button:hover {
+  background-color: #1a1a3d;
+}
+
+.login-container-student p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.login-container-student a {
+  color: #064663;
+  text-decoration: none;
+}
+.login-content-student {
+  /*student details.html register student*/
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.gender {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gender label {
+  font-weight: bold;
+}
+.dob {
+  margin-left: 20px;
+  display: flex;
+}
+.department-select {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.department-select label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.department-select select {
+  width: 90%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-left: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.sem-select {
+  margin: 20px 0;
+  text-align: left;
+}
+.sem-select label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.sem-select select {
+  width: 90%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-left: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.radioFilter {
+  margin-left: 1rem;
+}
+
+.get-by-filter {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden input {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.hidden select {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 50px;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 50px;
+}
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-4px);
+}
+.card-header {
+  background: #1e2f42;
+  color: #fff;
+  padding: 1rem;
+}
+.card-header h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+  color: #fff;
+}
+.card-header .meta {
+  font-size: 0.875rem;
+  opacity: 0.85;
+}
+.card-body {
+  padding: 1rem;
+}
+.books-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.books-table th,
+.books-table td {
+  border: 1px solid #e0e0e0;
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 0.875rem;
+}
+.books-table th {
+  background: #fafafa;
+}
+.info-group {
+  margin-bottom: 1rem;
+}
+.info-group h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.25rem;
+}
+.info-list {
+  list-style: none;
+}
+.info-list li {
+  margin-bottom: 0.25rem;
+}
+.info-list li span.label {
+  font-weight: bold;
+}
+.status-ACTIVE {
+  color: #27ae60;
+  font-weight: bold;
+}
+.status-DEACTIVE {
+  color: #c0392b;
+  font-weight: bold;
+}
+.status-BLOCKED {
+  color: #c0392b;
+  font-weight: bold;
+}
+.status-EXPIRED {
+  color: #c0392b;
+  font-weight: bold;
+}
